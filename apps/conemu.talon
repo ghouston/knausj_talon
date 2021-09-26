@@ -1,7 +1,7 @@
-os: windows
-app.exe: ConEmu64.exe
--
+# os: windows
+# app.exe: ConEmu64.exe
+# -
 
-tag(): terminal
-tag(): user.git
+# tag(): terminal
+# tag(): user.git
 
