@@ -1,9 +1,9 @@
-from talon import Module, Context
+# from talon import Module, Context
 
-mod = Module()
-mod.tag("anaconda", desc="tag for enabling anaconda commands in your terminal")
+# mod = Module()
+# mod.tag("anaconda", desc="tag for enabling anaconda commands in your terminal")
 
-ctx = Context()
-ctx.matches = r"""
-tag: user.anaconda
-"""
+# ctx = Context()
+# ctx.matches = r"""
+# tag: user.anaconda
+# """
