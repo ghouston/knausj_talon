@@ -46,3 +46,12 @@ link: user.insert_snippet_by_name("link")
 # toggle preview is specific to dendron extension
 (toggle|togo) preview: key('super-ctrl-p')
 
+task [<phrase>]:
+    edit.line_start()
+    "- [ ] {phrase}"
+task two [<phrase>]:
+    edit.line_start()
+    "    - [ ] {phrase}"
+task three [<phrase>]:
+    edit.line_start()
+    "        - [ ] {phrase}"
