@@ -30,7 +30,7 @@ language_extensions = {
     "protobuf": "proto",
     "r": "r",
     # 'racket': 'rkt',
-    "ruby": "rb",
+    "ruby": "rb rake",
     "rust": "rs",
     "scala": "scala",
     "scss": "scss",
