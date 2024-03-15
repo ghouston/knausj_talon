@@ -75,3 +75,6 @@ tab hunt <user.text>:
 
 suggest:
   user.vscode("editor.action.inlineSuggest.trigger")
+
+(go to | follow) link:
+  user.vscode('editor.action.openLink')
