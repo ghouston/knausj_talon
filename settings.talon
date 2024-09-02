@@ -85,7 +85,7 @@ settings():
 
 # Uncomment to enable the curse yes/curse no commands (show/hide mouse cursor).
 # See issue #688 for more detail: https://github.com/talonhub/community/issues/688
-# tag(): user.mouse_cursor_commands_enable
+tag(): user.mouse_cursor_commands_enable
 
 # Uncomment the below to disable support for saying numbers without a prefix.
 # By default saying "one" would write "1", however many users find this behavior
