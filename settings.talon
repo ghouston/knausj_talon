@@ -125,4 +125,4 @@ tag(): user.pop_twice_to_repeat
 
 # Uncomment the below to enable the experimental window layout commands
 # defined in window_layout.talon
-# tag(): user.experimental_window_layout
+tag(): user.experimental_window_layout
