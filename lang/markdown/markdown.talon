@@ -43,8 +43,10 @@ list six:
 
 link: user.insert_snippet_by_name("link")
 
-# toggle preview is specific to dendron extension
-(toggle|togo) preview: key('super-ctrl-p')
+(toggle|togo|show|switch) preview:
+    key('cmd-k')
+    sleep(200ms)
+    key('v')
 
 task [<phrase>]:
     edit.line_start()
