@@ -8,6 +8,9 @@ workspace <number>: user.slack_open_workspace(number)
 # Channel
 (slack | lack) [channel] info: user.slack_show_channel_info()
 focus (move | next): key(ctrl-`)
+# mac
+channel (next|down): key(alt-down)
+channel (previous|up): key(alt-up)
 (section | zone) [next]: user.slack_section_next()
 (section | zone) (previous | last): user.slack_section_previous()
 (slack | lack) (starred [items] | stars): user.slack_open_starred_items()
@@ -25,6 +28,12 @@ add line: key(shift-enter)
 (element | bit) [next]: key(tab)
 (element | bit) (previous | last): key(shift-tab)
 
+(slack | lack) jump: key(cmd-k)
+(slack | lack) jump to [<phrase>]:
+    key(cmd-k)
+    sleep(100ms)
+    {phrase}
+(slack | lack) home: key(ctrl-1)
 (slack | lack) (my stuff | activity): user.slack_open_activity()
 (slack | lack) directory: user.slack_open_directory()
 
@@ -43,7 +52,8 @@ bold: user.slack_toggle_bold()
 (strike | strikethrough): user.slack_toggle_strikethrough()
 (slack | lack) snippet: user.slack_create_snippet()
 # Calls
-(slack | lack) huddle: user.slack_huddle()
+# (slack | lack) huddle: user.slack_huddle()
+(slack | lack) (later): key(ctrl-4)
 ([toggle] mute | unmute): key(m)
 (slack | lack) ([toggle] video): key(v)
 (slack | lack) invite: key(a)
@@ -53,6 +63,10 @@ emote <user.text>: ":{text}:"
 (slack | lack) shortcuts: user.slack_open_keyboard_shortcuts()
 toggle left sidebar: user.slack_toggle_left_sidebar()
 toggle right sidebar: user.slack_toggle_right_sidebar()
+toggle left [sidebar | bar]: user.slack_toggle_left_sidebar()
+toggle right [sidebar | bar]: user.slack_toggle_right_sidebar()
+bar switch [left]: user.slack_toggle_left_sidebar()
+bar switch right: user.slack_toggle_right_sidebar()
 
 # DEPRECATED
 (move | next) focus:
@@ -70,3 +84,6 @@ toggle right sidebar: user.slack_toggle_right_sidebar()
 (previous | last) (element | bit):
     app.notify("please use the voice command 'element last' instead of 'last element'")
     key(shift-tab)
+
+# not sure if this works correctly...
+format message: key(ctrl-shift-f)
