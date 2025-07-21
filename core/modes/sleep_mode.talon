@@ -34,3 +34,6 @@ settings():
     user.mouse_wake()
     user.history_enable()
     user.talon_mode()
+
+# parrot(cluck):  # pop to wake Talon, future use double pop or something due to false positives.
+#     speech.enable()
