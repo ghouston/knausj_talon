@@ -30,3 +30,12 @@ last one:
   key(cmd-l)
   key(up)
   key(enter)
+
+# note, this shortcut will leave a charcode when looking at logs
+scroll bottom:
+  key(cmd-shift-down)
+
+find puts:
+  key(cmd-f)
+  ">>>>>"
+  key(enter)

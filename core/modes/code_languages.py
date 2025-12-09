@@ -29,7 +29,7 @@ code_languages = [
     Language("gdb", "g d b", ["gdb"]),
     Language("go", ["go lang", "go language"], ["go"]),
     Language("java", "java", ["java"]),
-    Language("javascript", "java script", ["js"]),
+    Language("javascript", "java script", ["js", "vue"]),
     Language("javascriptreact", "java script react", ["jsx"]),
     # Language("jsonl", "json lines", ["jsonl"]),
     Language("kotlin", "kotlin", ["kt"]),
@@ -60,7 +60,7 @@ code_languages = [
     # These languages doesn't actually have a language mode, but we do have snippets.
     Language("cpp", "see plus plus", ["cpp", "hpp"]),
     Language("csv", "csv", ["csv"]),
-    Language("html", "html", ["html"]),
+    Language("html", ["html", "web"], ["html"]),
     Language("json", "json", ["json"]),
     Language("shellscript", "shell script", ["sh"]),
     Language("xml", "xml", ["xml"]),
