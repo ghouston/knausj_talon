@@ -83,7 +83,7 @@ settings():
 
     # Uncomment to insert text longer than 10 characters (customizable) by pasting from
     # the clipboard. This is often faster than typing.
-    # user.paste_to_insert_threshold = 10
+    user.paste_to_insert_threshold = 10
 
     # Uncomment to enable context-sensitive dictation. This determines how to format
     # (capitalize, space) dictation-mode speech by selecting & copying surrounding text
@@ -105,7 +105,7 @@ settings():
 
 # Uncomment to enable the curse yes/curse no commands (show/hide mouse cursor).
 # See issue #688 for more detail: https://github.com/talonhub/community/issues/688
-# tag(): user.mouse_cursor_commands_enable
+tag(): user.mouse_cursor_commands_enable
 
 # Uncomment below enable pop_twice_to_wake
 # Without this tag noise_trigger_pop is usually associated with pop to click actions
@@ -116,7 +116,7 @@ settings():
 # Enabling this tag will repeat the last command when two pops are heard within the allotted time window
 # Without this tag noise_trigger_pop is usually associated with pop to click actions
 # Enabling this tag disables other pop to click actions in command mode, including pop to click
-# tag(): user.pop_twice_to_repeat
+tag(): user.pop_twice_to_repeat
 
 # Uncomment the below to enable support for saying numbers without a prefix.
 # By default you need to say "numb one" to write "1". If you uncomment this,
@@ -125,4 +125,4 @@ settings():
 
 # Uncomment the below to enable the experimental window layout commands
 # defined in window_layout.talon
-# tag(): user.experimental_window_layout
+tag(): user.experimental_window_layout

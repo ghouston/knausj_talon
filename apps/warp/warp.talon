@@ -1,9 +1,41 @@
+os: mac
+app: dev.warp.Warp-Stable
 app: warp
 -
 tag(): terminal
+# todo: filemanager support
+#tag(): user.file_manager
 tag(): user.generic_unix_shell
 tag(): user.git
 tag(): user.kubectl
 tag(): user.tabs
-tag(): user.file_manager
 tag(): user.readline
+
+^last speck:
+  key(cmd-l)
+  "spec"
+  key(ctrl-r)
+
+# ^last <phrase>:
+#   key(cmd-l)
+#   mimic(phrase)
+#   key(ctrl-r)
+
+# ^command [<phrase>]:
+#   key(cmd-l)
+#   mimic(phrase or "")
+#   # user.parse_phrase(phrase or "")
+
+last one:
+  key(cmd-l)
+  key(up)
+  key(enter)
+
+# note, this shortcut will leave a charcode when looking at logs
+scroll bottom:
+  key(cmd-shift-down)
+
+find puts:
+  key(cmd-f)
+  ">>>>>"
+  key(enter)

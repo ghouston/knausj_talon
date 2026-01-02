@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: Gregs-MacBook-Pro
+-
+user: /Users/gregh
+desktop: /Users/gregh/Desktop
+desk: /Users/gregh/Desktop
+documents: /Users/gregh/Documents
+docks: /Users/gregh/Documents
+downloads: /Users/gregh/Downloads
+music: /Users/gregh/Music
+pictures: /Users/gregh/Pictures
+videos: /Users/gregh/Videos
+talon home: /Users/gregh/.talon
+talon recordings: /Users/gregh/.talon/recordings
+talon user: /Users/gregh/.talon/user
+home: /Users/gregh

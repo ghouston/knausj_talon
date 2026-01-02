@@ -42,3 +42,18 @@ list six:
     user.insert_snippet("```{markdown_code_block_language}\n$0\n```")
 
 link: user.insert_snippet_by_name("link")
+
+(toggle|togo|show|switch) preview:
+    key('cmd-k')
+    sleep(200ms)
+    key('v')
+
+task [<phrase>]:
+    edit.line_start()
+    "- [ ] {phrase}"
+task two [<phrase>]:
+    edit.line_start()
+    "    - [ ] {phrase}"
+task three [<phrase>]:
+    edit.line_start()
+    "        - [ ] {phrase}"
